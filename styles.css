@@ -1119,7 +1119,7 @@ nav {
 
 .tab-button {
     font-family: 'Boowie';
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     background: transparent;
     border: 2px solid white;
@@ -1137,13 +1137,42 @@ nav {
 
 @media (max-width: 768px) {
     .tab-button {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         padding: 8px 16px;
     }
 
     .col-md-3 {
         flex: 1 0 46%; /* En pantallas más pequeñas, cada botón ocupará aproximadamente el 46% del ancho del contenedor */
         max-width: 46%;
+    }
+}
+
+@media (max-width: 992px) {
+    .tabs-section {
+        font-size: 0.9rem; /* Disminuir ligeramente el tamaño de la fuente */
+    }
+
+    .tabs-section h2 {
+        font-size: 2.5rem; /* Ajustar el tamaño del título en tablets */
+    }
+
+    .tabs-section p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+}
+
+/* Estilos para celulares (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .tabs-section {
+        font-size: 0.8rem; /* Disminuir más el tamaño de la fuente */
+    }
+
+    .tabs-section h2 {
+        font-size: 2rem; /* Ajustar el tamaño del título en celulares */
+    }
+
+    .tabs-section p {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
     }
 }
 
@@ -1298,62 +1327,3 @@ nav {
 
 
 
-
-/* blog */
-
-/* styles css */
-
-.body4 {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.header {
-    background: url('header-background.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 20px 0;
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 20px;
-    text-align: center;
-}
-
-.navbar {
-    margin-bottom: 20px;
-}
-
-.main-content {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-article h2 {
-    color: #333;
-}
-
-.about-me, .popular-posts {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.popular-posts ul {
-    list-style: none;
-    padding: 0;
-}
-
-.popular-posts li a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.popular-posts li a:hover {
-    text-decoration: underline;
-}
